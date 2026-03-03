@@ -24,7 +24,7 @@ class EcuacionLineal:
             return r2
         
     def __del__(self):
-        return "Objeto eliminado"
+        print("Objeto eliminado")
         
 class Main():
     a = int(input("a:"))

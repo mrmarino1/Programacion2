@@ -23,7 +23,7 @@ class Estadistica:
         return f"El promedio es {self.promedio():.2f} \nLa desviacion estandar es {self.desviacion():.5f}"
     
     def __del__(self):
-        return "Objeto eliminado"
+        print("Objeto eliminado")
     
 class Main():
     num = []

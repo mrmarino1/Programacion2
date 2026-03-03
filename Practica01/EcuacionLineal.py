@@ -32,7 +32,7 @@ class EcuacionLineal:
         return f"x = {self.getX():.1f} , y = {self.getY():.1f} "
 
     def __del__(self):
-        return "Objeto eliminado"
+        print("Objeto eliminado")
     
 class Main():
     a = float(input("a:"))
