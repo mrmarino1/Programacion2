@@ -23,6 +23,9 @@ class EcuacionLineal:
             r2 = ((- self.__b) - math.sqrt(self.getDiscriminante())) / (2 * self.__a)
             return r2
         
+    def __del__(self):
+        return "Objeto eliminado"
+        
 class Main():
     a = int(input("a:"))
     b = int(input("b:"))
@@ -34,3 +37,5 @@ class Main():
         print(f"La ecuacion tiene una raiz {ecuacion.getRaiz1():.6f}")
     else:
         print("La ecuacion no tiene raices reales")
+    
+    del ecuacion

@@ -21,7 +21,10 @@ class Estadistica:
     
     def __str__(self):
         return f"El promedio es {self.promedio():.2f} \nLa desviacion estandar es {self.desviacion():.5f}"
-
+    
+    def __del__(self):
+        return "Objeto eliminado"
+    
 class Main():
     num = []
     for i in range(10):
@@ -29,3 +32,4 @@ class Main():
         num.append(x)
     calculo = Estadistica(num)
     print(calculo.__str__())
+    del calculo

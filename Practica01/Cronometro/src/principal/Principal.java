@@ -27,5 +27,6 @@ public class Principal {
         }
         cr.detener();
         System.out.println("Lapso de tiempo: "+cr.lapsoDeTiempo());
+        System.gc();
     }    
 }

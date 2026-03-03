@@ -31,6 +31,9 @@ class EcuacionLineal:
     def  __str__(self):
         return f"x = {self.getX():.1f} , y = {self.getY():.1f} "
 
+    def __del__(self):
+        return "Objeto eliminado"
+    
 class Main():
     a = float(input("a:"))
     b = float(input("b:"))
@@ -43,3 +46,5 @@ class Main():
         print(ecuacion.__str__())
     else:
         print("La ecuacion no tiene solucion")
+    
+    del ecuacion

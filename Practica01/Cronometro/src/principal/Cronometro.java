@@ -26,4 +26,9 @@ public class Cronometro {
     public long lapsoDeTiempo(){
         return (this.finaliza - this.inicia);
     }
+    
+    @Override
+    protected void finalize(){
+        System.out.println("Objeto eliminado");
+    }
 }
